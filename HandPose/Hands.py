@@ -34,9 +34,9 @@ with mp_hands.Hands(
     cv2.imwrite(r'hands.png', annotated_image)
 
 ## For webcam input:
-#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 ##For Video
-cap = cv2.VideoCapture("hands.mp4")
+##cap = cv2.VideoCapture("hands.mp4") #any mp4 file
 prevTime = 0
 with mp_hands.Hands(
     min_detection_confidence=0.5,       #Detection Sensitivity
